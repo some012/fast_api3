@@ -6,11 +6,15 @@ authors = ["some012 <someone200315@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-fastapi = "^0.108.0"
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+sqlalchemy = "^2.0.24"
 python-dotenv = "^1.0.0"
-sqlalchemy = "^2.0.25"
-uvicorn = {extras = ["standart"], version = "^0.25.0"}
+alembic = "^1.13.1"
+psycopg = "^3.1.16"
+asyncpg = "^0.29.0"
+postgres = "^4.0"
 
 
 [build-system]
